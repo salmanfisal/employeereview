@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+button {
+  margin: 10px;
+}

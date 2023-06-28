@@ -1,0 +1,93 @@
+{
+  "user": [
+    {
+      "id": "sakxlkwemrlcmwe",
+      "name": "cemrcek cvkev",
+      "password": "fcervcecve",
+      "email": "cerjcverlcvkejvc@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "salman",
+      "name": "salman fisal",
+      "password": "salmanfisal",
+      "role": "admin",
+      "email": "salmanfisal123@gmail.com"
+    },
+    {
+      "id": "salman fisal",
+      "name": "mohammad abdul salman fisal",
+      "password": "ckjzxwnrlckjnwkjefnkwcrf",
+      "email": "salmanfisal123@gmail.com"
+    },
+    {
+      "id": "fisal",
+      "name": "salmanfisal",
+      "password": "abcdefg",
+      "role": "user",
+      "email": "salman@g.com"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "employee",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "employee",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "employee",
+      "haveadd": false,
+      "haveedit": false,
+      "havedelete": false
+    },
+    {
+      "role": "user1",
+      "menu": "employee",
+      "haveadd": false,
+      "haveedit": false,
+      "havedelete": false
+    }
+  ],
+  "employees": [
+    {
+      "code": 1,
+      "name": "salman",
+      "email": "salman@in.com",
+      "perfomance": "good"
+    },
+    {
+      "code": 2,
+      "name": "fisal",
+      "email": "fisal@in.com",
+      "perfomance": "above average"
+    },
+    {
+      "code": 3,
+      "name": "udhay",
+      "email": "udhay@in.com",
+      "perfomance": "average"
+    },
+    {
+      "code": 4,
+      "name": "murali",
+      "email": "murali@in.com",
+      "perfomance": "need improvement"
+    },
+    {
+      "code": 5,
+      "name": "ravi",
+      "email": "ravi@in.com",
+      "perfomance": "good"
+    }
+  ]
+}
