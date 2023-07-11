@@ -51,9 +51,11 @@ function Login() {
   return (
     <div className="container">
       <form onSubmit={submitHander}>
-        <h1>please login </h1>
+      <h1>please login </h1>
+
+        <div className="inputField">
         <label>
-          user name <span className="errmsg">*</span>
+          user name
         </label>
         <input
           value={username}
@@ -61,10 +63,10 @@ function Login() {
           placeholder="user name"
           className="input"
         ></input>
-        <br />
-        <br />
+       </div>
+       <div className="inputField2" >
         <label>
-          Password <span className="errmsg">*</span>
+          Password
         </label>
         <input
           value={password}
@@ -72,15 +74,13 @@ function Login() {
           type="password"
           placeholder="Password"
           className="input"
-        ></input>
-        <div className="button">
+        ></input></div>
           <button type="submit" className="button-self">
             Login
           </button>{" "}
-          <button type="submit" className="button-self" onClick={redirect}>
+          {/* <button type="submit" className="button-self" onClick={redirect}>
             Register
-          </button>{" "}
-        </div>
+          </button>{" "} */}
       </form>
     </div>
   );

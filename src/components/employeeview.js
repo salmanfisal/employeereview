@@ -8,6 +8,7 @@ const Employee = () => {
   const [haveview, viewchange] = useState(false);
   const [haveadd, addchange] = useState(false);
   const [haveremove, removechange] = useState(false);
+  const [register, setRegister] = useState(false);
 
   const navigate = useNavigate();
 
@@ -50,9 +51,15 @@ const Employee = () => {
         if (res.length > 0) {
           viewchange(true);
           let userobj = res[0];
+          if (userobj.role === "admin") {
+            console.log("hello world");
+          }else{
+            console.log("not admin")
+          }
           editchange(userobj.haveedit);
           addchange(userobj.haveadd);
           removechange(userobj.havedelete);
+          setRegister(true);
         } else {
           navigate("/");
           toast.warning("You are not authorized to access");

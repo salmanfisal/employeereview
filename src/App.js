@@ -4,14 +4,13 @@ import Register from "./components/register.js";
 import { ToastContainer } from "react-toastify";
 import Appheader from "./components/appheader.js";
 import Employee from "./components/employeeview.js";
-
+import {useContext} from "react";
 import Home from "./components/home.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <ToastContainer theme="colored" position="top-center"></ToastContainer>
       <BrowserRouter>
+      
         <Appheader />
         <Routes>
           <Route path="/" element={<Login />} />
@@ -21,7 +20,6 @@ function App() {
           <Route path="/employeeview" element={<Employee />} />
         </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 

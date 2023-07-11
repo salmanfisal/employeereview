@@ -9,6 +9,7 @@ function Appheader() {
   useEffect(() => {
     if (location.pathname === "/login" || location.pathname === "/register") {
       setMenu(false);
+      
     } else {
       setMenu(true);
       let username = sessionStorage.getItem("username");
@@ -29,7 +30,9 @@ function Appheader() {
             Welcome <b>{display}</b>
           </span>
           <Link to={"/login"}>Logout</Link>
+          <Link to ={"/register"}>Register</Link>
         </div>
+        
       )}
     </div>
   );

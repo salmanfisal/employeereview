@@ -1,12 +1,6 @@
 {
   "user": [
-    {
-      "id": "sakxlkwemrlcmwe",
-      "name": "cemrcek cvkev",
-      "password": "fcervcecve",
-      "email": "cerjcverlcvkejvc@gmail.com",
-      "role": "user"
-    },
+  
     {
       "id": "salman",
       "name": "salman fisal",
@@ -15,17 +9,18 @@
       "email": "salmanfisal123@gmail.com"
     },
     {
-      "id": "salman fisal",
-      "name": "mohammad abdul salman fisal",
-      "password": "ckjzxwnrlckjnwkjefnkwcrf",
-      "email": "salmanfisal123@gmail.com"
-    },
-    {
       "id": "fisal",
       "name": "salmanfisal",
       "password": "abcdefg",
       "role": "user",
       "email": "salman@g.com"
+    },
+    {
+      "id": "kittu",
+      "name": "krishna",
+      "password": "123456",
+      "role":"admin",
+      "email": "krishna@gmail.com"
     }
   ],
   "roleaccess": [
@@ -41,14 +36,16 @@
       "menu": "employee",
       "haveadd": true,
       "haveedit": true,
-      "havedelete": true
+      "havedelete": true,
+      "register":true
     },
     {
       "role": "user",
       "menu": "employee",
       "haveadd": false,
       "haveedit": false,
-      "havedelete": false
+      "havedelete": false,
+      "register":true
     },
     {
       "role": "user1",
