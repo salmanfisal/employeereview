@@ -6,6 +6,8 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
 }
 h1,
 h2,
@@ -24,44 +26,80 @@ p {
   height: 100vh;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  padding: 200px 0 350px 0;
   animation: Gradient 15s ease infinite;
   box-sizing: border-box;
 }
 h1 {
-display: flex;
-
+  display: flex;
 }
 
-button {
-  background-color: rgb(28, 244, 28);
-  width:20%;
+.button-self {
   align-self: center;
-  margin-top:30px
+  background-color: rgb(28, 244, 28);
+  width: 20%;
+  margin-left: 170px;
+  padding: 8px 5px;
+  font-size: 20px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button-self:hover{
+  background-color: green;
+  color:white;
+ border-radius: 20px;
 }
 
-label{
- margin-bottom: -20px;
- font-size: 20px;
+label {
+  margin-bottom: -20px;
+  font-size: 20px;
 }
-form{
+.login-form {
   grid-column: 2;
   grid-row: 2;
   display: grid;
-  grid-gap: 5px;
-  margin: auto 0;
-  padding: 20px;
-  background-color: rgba(255,255,255,0.9);
+  grid-gap: 8px;
+  margin: 10px 10px 180px 0;
+  width: 40%;
+  padding: 0 40px 0 40px;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
-  box-shadow: 0 32px 64px rgba(0,0,0,0.2);
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  white-space: nowrap;
+  transition: 1s alternate;
 }
-.inputField{
+.inputField {
   display: flex;
-flex-direction: column;
-gap:20px;  
-font-size: 20px;
-padding: 60px 0px 60px 0;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 20px;
+  overflow: hidden;
+  
+}
+.inputField2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 60px 0px 10px 0;
+}
+.input-box {
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+.label {
+  padding-bottom: 20px;
 }
 @keyframes Gradient {
   0% {

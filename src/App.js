@@ -1,6 +1,5 @@
 import "./App.css";
 import Login from "./components/login.js";
-import Register from "./components/register.js";
 import { ToastContainer } from "react-toastify";
 import Appheader from "./components/appheader.js";
 import Employee from "./components/employeeview.js";
@@ -16,7 +15,6 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/register" element={<Register />} />
           <Route path="/employeeview" element={<Employee />} />
         </Routes>
       </BrowserRouter>
