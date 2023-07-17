@@ -34,20 +34,22 @@ h1 {
 }
 
 .button-self {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
   align-self: center;
   background-color: rgb(28, 244, 28);
-  width: 20%;
-  margin-left: 170px;
-  padding: 8px 5px;
+  width: 80px;
+  margin-left: 40px;
   font-size: 20px;
   border: 1px solid grey;
   border-radius: 8px;
   cursor: pointer;
 }
-.button-self:hover{
+.button-self:hover {
   background-color: green;
-  color:white;
- border-radius: 20px;
+  color: white;
+  border-radius: 20px;
 }
 
 label {
@@ -55,9 +57,11 @@ label {
   font-size: 20px;
 }
 .login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   grid-column: 2;
   grid-row: 2;
-  display: grid;
   grid-gap: 8px;
   margin: 10px 10px 180px 0;
   width: 40%;
@@ -78,7 +82,6 @@ label {
   width: 100%;
   font-size: 20px;
   overflow: hidden;
-  
 }
 .inputField2 {
   display: flex;
@@ -100,6 +103,44 @@ label {
 }
 .label {
   padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    width:200px;
+  }
+  .inputField {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputField2 {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .input-box {
+    width: 100px;
+  }
+
+  label {
+    display: flex;
+    margin-bottom: -20px;
+    font-size: 20px;
+    margin-left:-50px;
+
+
+  }
+  .label {
+    display: flex;
+
+}
+.button-self{
+  display: flex;
+  margin-left: 5px;
+}
 }
 @keyframes Gradient {
   0% {
