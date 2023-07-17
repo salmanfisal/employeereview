@@ -8,3 +8,14 @@
     background-color: aquamarine;
     align-items: center;
 }
+.workinprogress {
+    width: 50%;
+    height: 50%;
+   margin-left: 350px;
+   margin-top:60px;
+
+  }
+  .workin{
+    display: flex;
+    justify-content: center;
+  }

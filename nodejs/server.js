@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }), express.json());
 async function mongo() {
   try {
-    await mongoose.connect("mongodb://127.0.0.1/studentData");
+    await mongoose.connect("mongodb+srv://salmanfisal:Salmanfisal@cluster0.arbaba9.mongodb.net/");
     console.log("connected");
   } catch (err) {
     console.log(err);
@@ -27,6 +27,11 @@ app.post("/login", (req, res) => {
       if (password === resp.password) {
         console.log("successfully loggedIn");
       }
+      else{
+        console.log("wrong password")
+      }
+    }else{
+      console.log("wrong email")
     }
 
   });
@@ -35,7 +40,7 @@ app.post("/login", (req, res) => {
 app.get("/get",(req,res)=>{
   usermodel.find({})
 })
-// app.post("/", (req, res) => {
+// app.post("/login", (req, res) => {
 //   let { username, password } = req.body;
 //   let user = new usermodel({
 //     username,

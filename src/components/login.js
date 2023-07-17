@@ -16,7 +16,6 @@ function Login() {
 
   useEffect(() => {
     sessionStorage.clear();
-    server()
   }, []);
   let validate = () => {
     let isvalid = true;
@@ -65,11 +64,11 @@ function Login() {
       }
     })
 }
-async function server(){
-  await fetch("http://localhost:8080/login")
+// async function server(){
+//   await fetch("http://localhost:8080/login")
  
-  .then((res)=>console.log(res))
-}
+//   .then((res)=>console.log(res))
+// }
   return (
     <div className="container">
       <form onSubmit={submitHandler} className="login-form">
