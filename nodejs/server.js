@@ -23,34 +23,31 @@ let usermodel = new mongoose.model("studentData", schema);
 mongo();
 app.post("/login", (req, res) => {
   let { username, password } = req.body;
-  
-  usermodel.findOne({ username: username }).then((resp) => {
-    if (resp) {
-      if (password === resp.password) {
-        res.status(200).json({
-          response: "successfully loggedIn",
-        });
+
+ usermodel
+    .findOne({ "username": username })
+    .then((resp) => {
+      if (resp) {
+        if (password === resp.password) {
+          res.status("successfully loggedIn");
+        } else {
+          res.end("wrong password");
+        }
       } else {
-        res.status(200).json({
-          response: "wrong password",
-        });
+        res.end("wrong email");
       }
-    } else {
-      res.status(204).json({
-        response: "wrong email",
+    })
+    .catch((error) => {
+      // Handle any errors that occur during the database query
+      res.status(500).json({
+        response: "Internal Server Error",
       });
-    }
-  }).catch((error) => {
-    // Handle any errors that occur during the database query
-    res.status(500).json({
-      response: "Internal Server Error",
     });
-  });
 });
 
-app.get("/login", async(req, res) => {
- let data =  await usermodel.find({});
- res.json(data)
+app.get("/login", async (req, res) => {
+  let data = await usermodel.find({});
+  res.json(data);
 });
 // app.post("/login", (req, res) => {
 //   let { username, password } = req.body;

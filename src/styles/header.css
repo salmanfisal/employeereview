@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.headerContainer{
+    display: flex;
+    width:100vw;
+    height:40px;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: fixed;
+}
+ ul{
+    display: flex;
+    width:100vw;
+    justify-content: space-around;
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color:black;
+
+}
